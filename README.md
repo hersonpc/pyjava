@@ -1,14 +1,21 @@
-# **Docker Container for Python**
+# **Python container in Docker**
 
-This is a Docker image for deploying Python based code
+These are my Docker images, for deploying and distributing apps with Python based code.
 
 [https://hub.docker.com/r/hersonpc/python](https://hub.docker.com/r/hersonpc/python)
 
-## Docker commands
+## Get started
 
-To download the image from Docker Hub:
+To get the image from Docker Hub to your machine:
 
 ```shell
-# Python 3.10
-docker pull hersonpc/python:3.10-slim
+docker pull hersonpc/python:<version>
 ```
+
+To choose a version, check the options below.
+
+## Container versions
+
+### for Python 3.10
+
+- [3.10-slim](3.10/slim/Dockerfile)
