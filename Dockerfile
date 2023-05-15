@@ -1,3 +1,6 @@
+# GitHub: https://github.com/hersonpc/pyjava
+
+
 # Imagem intermediária para compilar os pacotes
 FROM python:3.11.3-slim AS builder
 
