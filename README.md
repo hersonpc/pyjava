@@ -25,3 +25,4 @@ To choose a version, check the options below.
 
 - [3.11-slim](3.11/slim/Dockerfile)
 - [3.11-oracle](3.11/oracle/Dockerfile) with OJDBC to connect to Oracle databases
+- [3.11-django-4](3.11/django-4/Dockerfile) with Django 4.2 pre-installed
