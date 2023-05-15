@@ -24,3 +24,4 @@ To choose a version, check the options below.
 ### for Python 3.11
 
 - [3.11-slim](3.11/slim/Dockerfile)
+- [3.11-oracle](3.11/oracle/Dockerfile) with OJDBC to connect to Oracle databases
