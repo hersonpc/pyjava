@@ -45,10 +45,12 @@ ENV JAVA_HOME /usr/local/openjdk-21
 RUN update-alternatives --install /usr/bin/java java /usr/local/openjdk-21/bin/java 1
 
 # instala o driver para acesso ao banco de dados oracle
-COPY ./driver/ojdbc8.jar /app/ojdbc8.jar
+COPY ./driver/ojdbc8.jar /opt/jdbc/drivers/ojdbc8.jar
+RUN chown -R user:user /opt/jdbc/
+
+# criando variáveis de ambiente para o driver do oracle
 ENV ORACLE_DRIVER_CLASSNAME=oracle.jdbc.driver.OracleDriver
-ENV ORACLE_DRIVER_JAR=ojdbc8.jar
-RUN chown user:user /app/ojdbc8.jar
+ENV ORACLE_DRIVER_JAR=/opt/jdbc/drivers/ojdbc8.jar
 
 # baixar privilégios
 USER user

@@ -4,6 +4,13 @@ These are my Docker images, for deploying and distributing apps with Python base
 
 [https://hub.docker.com/r/hersonpc/python](https://hub.docker.com/r/hersonpc/python)
 
+## Deploy an image
+
+```shell
+cd 3.10/oracle
+docker buildx build --platform linux/amd64,linux/arm64/v8 --push -t hersonpc/python:3.10-oracle -f Dockerfile .
+```
+
 ## Get started
 
 To get the image from Docker Hub to your machine:
